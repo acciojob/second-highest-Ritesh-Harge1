@@ -8,12 +8,12 @@ function secondHighest(arr) {
         if (num > first) {
             second = first;
             first = num;
-        } else if (num > second && num < first) {
+        } else if (num < first && num > second) {
             second = num;
         }
     }
 
-    return second;
+    return second === -Infinity ? -Infinity : second;
 }
 
 // Test cases
@@ -22,3 +22,4 @@ console.log(secondHighest([-1, -2, -3, -4, -5])); // -2
 console.log(secondHighest([])); // -Infinity
 console.log(secondHighest([1])); // -Infinity
 console.log(secondHighest([1, 1, 1, 1, 1])); // -Infinity
+
