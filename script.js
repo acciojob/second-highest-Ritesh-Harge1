@@ -1,4 +1,3 @@
-//your JS code here. If required.
 function secondHighest(arr) {
     if (!arr || arr.length < 2) return -Infinity;
 
@@ -17,9 +16,9 @@ function secondHighest(arr) {
     return second;
 }
 
-// Example usage:
-console.log(secondHighest([5, 1, 2, 3, 4]));    // 4
+// Test cases
+console.log(secondHighest([5, 1, 2, 3, 4])); // 4
 console.log(secondHighest([-1, -2, -3, -4, -5])); // -2
-console.log(secondHighest([]));                 // -Infinity
-console.log(secondHighest([1]));                // -Infinity
-console.log(secondHighest([1, 1, 1, 1, 1]));    // -Infinity
+console.log(secondHighest([])); // -Infinity
+console.log(secondHighest([1])); // -Infinity
+console.log(secondHighest([1, 1, 1, 1, 1])); // -Infinity
